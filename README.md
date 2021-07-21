@@ -33,6 +33,6 @@ and will often end up doing the `time ./a.out` poop 💩.
 - Result elapsed time will differ at each launch of the executable because of the computer “noise”  
 so it is recommended to launch it (and take note of the results) several times. 
   
-- The most meaningful result is the minimum elapsed time you find.  
+- The most meaningful result is the minimum elapsed time you find (not the max, not the mean, not even the median).  
   
 - Do not take account of very small differences, they mostly noise.  
