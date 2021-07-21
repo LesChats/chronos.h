@@ -34,4 +34,5 @@ so it is recommended to launch it (and take note of the results) several times.
   
 - The most meaningful result is the minimum elapsed time you find (not the max, not the mean, not even the median).  
   
-- Do not take account of very small differences, they mostly noise.  
+- Do not take account of very small differences, they mostly noise.   
+- You can re-use the functions and the same structure anywhere in your code sevral times.
