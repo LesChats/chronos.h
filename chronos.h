@@ -21,8 +21,8 @@
 
 typedef struct s_chronos
 {
-    struct	timeval tv;
-    struct	timezone tz;
+	struct	timeval tv;
+	struct	timezone tz;
 	double	start;
 	double	end;
 }			t_chronos;
@@ -53,7 +53,7 @@ inline void end_chronos(t_chronos *chrono)
 }
 
 /*
-**	Display enlapsed time whit info message
+**	Display elapsed time whit info message
 */
 inline void get_diff(t_chronos *chrono, const char *message)
 {
