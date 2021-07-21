@@ -15,14 +15,14 @@ and will often end up doing the `time ./a.out` poop 💩.
 
 # Usage
 
-1. Clone the repo and add chronos.h to yours library.  
+1. Clone the repo and add `chronos.h` to yours library.  
   exemple:  
   `git clone https://github.com/LesChats/chronos.h.git chronos && cp chronos/chronos.h includes/ && rm -rf chronos`
   ![alt text](https://github.com/LesChats/chronos.h/blob/master/exemple_image/clone.png)
-2. Include chronos.h and add the t_chronos structure where you need to measure.  
+2. Include `chronos.h` and add the `t_chronos` structure where you need to measure.  
   ![alt text](https://github.com/LesChats/chronos.h/blob/master/exemple_image/init.png)
-3. Surround the 🔥 part of your code whit the **start_chronos** and **end_chronos** functions  
-    hen display the elapsed time wherever you please using **get_diff**  
+3. Surround the 🔥 part of your code whit the `start_chronos` and `end_chronos` functions  
+    hen display the elapsed time wherever you please using `get_diff`  
    exemple 1:  
    ![alt text](https://github.com/LesChats/chronos.h/blob/master/exemple_image/usage1.png)  
    exemple 2:  
