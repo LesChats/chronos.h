@@ -31,7 +31,7 @@ and will often end up doing the `time ./a.out` poop 💩.
    ![alt text](https://github.com/LesChats/chronos.h/blob/master/exemple_image/result.png)
 # Advices
 - Result elapsed time will differ at each launch of the executable because of the computer “noise”  
-so it is recommended to launch and take note of the result several times. 
+so it is recommended to launch it (and take note of the results) several times. 
   
 - The most meaningful result is the minimum elapsed time you find.  
   
