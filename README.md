@@ -12,3 +12,27 @@ That being said, many people (at 42 school) don't know how to easily measure the
 and will often end up doing the `time ./a.out` poop 💩.
 
 ⭐ The purpose of this repo is to address that issue the simple way ⭐.
+
+# Usage
+
+1. Clone the repo and add chronos.h to yours library.  
+  exemple:  
+  `git clone https://github.com/LesChats/chronos.h.git chronos && cp chronos/chronos.h includes/ && rm -rf chronos`
+  ![alt text](https://github.com/LesChats/chronos.h/blob/master/exemple_image/clone.png)
+2. Include chronos.h and add the t_chronos structure where you need to measure.  
+  ![alt text](https://github.com/LesChats/chronos.h/blob/master/exemple_image/init.png)
+3. Surround the 🔥 part of your code whit the **start_chronos** and **end_chronos** functions  
+    hen display the elapsed time wherever you please using **get_diff**  
+   exemple 1:  
+   ![alt text](https://github.com/LesChats/chronos.h/blob/master/exemple_image/usage1.png)  
+   exemple 2:  
+   ![alt text](https://github.com/LesChats/chronos.h/blob/master/exemple_image/usage2.png)
+4. Finaly execute your program and take note of the result in your terminal
+   ![alt text](https://github.com/LesChats/chronos.h/blob/master/exemple_image/result.png)
+# Advices
+- Result elapsed time will differ at each launch of the executable because of the computer “noise”  
+so it is recommended to launch and take note of the result several times. 
+  
+- The most meaningful result is the minimum elapsed time you find.  
+  
+- Do not take account of very small differences, they mostly noise.  
