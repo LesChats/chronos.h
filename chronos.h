@@ -30,7 +30,7 @@ typedef struct s_chronos
 /*
 ** The only reason for time is so that everything doesn't happen at one
 */
-inline double	get_time(t_chronos *chrono)
+double	get_time(t_chronos *chrono)
 {
     gettimeofday(&chrono->tv, &chrono->tz);
     return (chrono->tv.tv_sec + chrono->tv.tv_usec * 1e-6);
@@ -39,7 +39,7 @@ inline double	get_time(t_chronos *chrono)
 /*
 ** start the chrono
 */
-inline void	start_chronos(t_chronos *chrono)
+void	start_chronos(t_chronos *chrono)
 {
 	chrono->start = get_time(chrono);
 }
@@ -47,7 +47,7 @@ inline void	start_chronos(t_chronos *chrono)
 /*
 ** end the chrono
 */
-inline void end_chronos(t_chronos *chrono)
+void end_chronos(t_chronos *chrono)
 {
 	chrono->end = get_time(chrono);
 }
@@ -55,7 +55,7 @@ inline void end_chronos(t_chronos *chrono)
 /*
 **	Display elapsed time whit info message
 */
-inline void get_diff(t_chronos *chrono, const char *message)
+void get_diff(t_chronos *chrono, const char *message)
 {
 	printf("\033[1;33m%s: \033[1;31m[ %.*f ]\033[0;0m\n",
 		   	message, PRECISION, chrono->end - chrono->start);
